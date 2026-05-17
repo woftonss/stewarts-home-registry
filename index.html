@@ -5,116 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A home registry for Stewart's next chapter, with room-by-room gifts and simple ways to help."
+      content="The Stewarts' next chapter registry, with registry partners and ways to contribute."
     />
-    <title>Stewart's Home Registry</title>
+    <title>The Stewarts | Our Next Chapter</title>
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="Stewart's Home Registry home">
-        <span class="brand-mark">S</span>
-        <span>Stewart's Home Registry</span>
-      </a>
+    <header class="site-header">
+      <a class="brand" href="#top">The Stewarts</a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#registry">Registry</a>
-        <a href="#details">Details</a>
-        <a href="#note">Note</a>
+        <a class="active" href="#registry">Our Registry</a>
+        <a href="#contribute">Ways To Contribute</a>
+        <a href="#thank-you">Thank You</a>
       </nav>
+      <a class="outline-button" href="#registry">View Our Registry</a>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">For the place we are making home</p>
-          <h1 id="hero-title">Stewart's Home Registry</h1>
+        <div class="hero-panel">
+          <p class="overline">The Stewarts</p>
+          <h1 id="hero-title">Our Next Chapter</h1>
+          <div class="divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
           <p class="hero-copy">
-            A simple list of helpful pieces for settling in, hosting well, and
-            making everyday rooms feel ready for real life.
+            A new home. New memories.<br />
+            We are so thankful to have you in our lives as we begin this
+            beautiful journey together.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#registry">View registry</a>
-            <a class="button secondary" href="#details">How to help</a>
+            <a class="gold-button" href="#registry">View Our Registry</a>
+            <a class="ghost-button" href="#contribute">Ways To Contribute</a>
           </div>
         </div>
       </section>
 
-      <section class="intro" id="details" aria-labelledby="details-title">
-        <div>
-          <p class="section-kicker">Thank you</p>
-          <h2 id="details-title">Every gift helps turn the house into a home.</h2>
+      <section class="cream-section" id="registry" aria-labelledby="registry-title">
+        <div class="section-title">
+          <h2 id="registry-title">Our Registry Partners</h2>
+          <div class="divider small" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
         </div>
-        <div class="detail-grid">
-          <article>
-            <span class="detail-icon">01</span>
-            <h3>Choose a room</h3>
-            <p>Browse by kitchen, living room, bedroom, outdoor, and practical essentials.</p>
+
+        <div class="partner-grid">
+          <article class="partner-card">
+            <p class="partner-logo amazon">amazon</p>
+            <a class="black-button" href="https://www.amazon.com/hz/wishlist/ls/1VOLOSW67MG7G?ref=cm_sw_em_r_un_un_dbeNCzcurkKDa" target="_blank" rel="noreferrer">Shop Amazon</a>
           </article>
-          <article>
-            <span class="detail-icon">02</span>
-            <h3>Pick what feels right</h3>
-            <p>Each item includes a priority and a suggested amount so there is no guessing.</p>
+          <article class="partner-card">
+            <p class="partner-logo target"><span></span>Target</p>
+            <a class="black-button" href="https://www.target.com/gift-registry/gift/TheStewartsHome" target="_blank" rel="noreferrer">Shop Target</a>
           </article>
-          <article>
-            <span class="detail-icon">03</span>
-            <h3>Send a note</h3>
-            <p>A message matters too. The registry keeps room for warmth, not just things.</p>
+          <article class="partner-card">
+            <p class="partner-logo myregistry">myregistry.com</p>
+            <a class="black-button" href="https://www.myregistry.com/wishlist/wofton-stewart-fort-sill-ok/5445978" target="_blank" rel="noreferrer">View Registry</a>
+          </article>
+          <article class="partner-card">
+            <p class="partner-logo depot">The<br />Home<br />Depot</p>
+            <a class="black-button" href="https://www.homedepot.com/list/view/details/shared/36806290-50cc-11f1-9eba-ebc146daa157?cm_mmc=ecc-_-THD_LIST-_-V1_M1_CB-_-VIEW_LIST&em_id=08c97cbf0846d57c790f1a2262488b97679114a879fed8e18e1da24c123f4cd4" target="_blank" rel="noreferrer">Shop Home Depot</a>
           </article>
         </div>
       </section>
 
-      <section class="registry-section" id="registry" aria-labelledby="registry-title">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">Registry</p>
-            <h2 id="registry-title">Room-by-room wishlist</h2>
-          </div>
-          <label class="search-label">
-            <span>Search registry</span>
-            <input id="searchInput" type="search" placeholder="Search items or rooms" />
-          </label>
+      <section class="story-section" aria-labelledby="story-title">
+        <div class="story-photo">
+          <img src="assets/family-girls-day-out.jpg" alt="Family smiling together at Girls Day Out" />
         </div>
-
-        <div class="filters" role="list" aria-label="Registry filters">
-          <button class="filter active" data-filter="All" type="button">All</button>
-          <button class="filter" data-filter="Kitchen" type="button">Kitchen</button>
-          <button class="filter" data-filter="Living" type="button">Living</button>
-          <button class="filter" data-filter="Bedroom" type="button">Bedroom</button>
-          <button class="filter" data-filter="Outdoor" type="button">Outdoor</button>
-          <button class="filter" data-filter="Essentials" type="button">Essentials</button>
-        </div>
-
-        <div class="registry-grid" id="registryGrid" aria-live="polite"></div>
-      </section>
-
-      <section class="note-section" id="note" aria-labelledby="note-title">
-        <div class="note-panel">
-          <p class="section-kicker">A personal note</p>
-          <h2 id="note-title">We are grateful you are part of this chapter.</h2>
+        <div class="story-copy">
+          <p class="overline">Family first</p>
+          <h2 id="story-title">A home for the memories we are still making.</h2>
+          <div class="divider small left" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
           <p>
-            Whether you choose something practical, something beautiful, or just
-            send encouragement, thank you for helping make this home feel full
-            before the boxes are even unpacked.
+            This next chapter is about more than rooms and furniture. It is
+            about giving our family a place to grow, gather, celebrate, rest,
+            and make ordinary days feel special.
           </p>
         </div>
-        <div class="contact-panel" aria-label="Registry contact details">
-          <h3>Send gifts or questions</h3>
-          <p>Stewart Home Registry</p>
-          <button id="copyAddress" class="button primary" type="button">
-            Copy mailing address
-          </button>
-          <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+      </section>
+
+      <section class="cream-section contribution-section" id="contribute" aria-labelledby="contribute-title">
+        <div class="section-title">
+          <h2 id="contribute-title">Other Ways To Contribute</h2>
+          <div class="divider small" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+        </div>
+
+        <div class="contribution-grid">
+          <article class="contribution-card">
+            <h3>Zelle</h3>
+            <p class="pay-logo zelle">Zelle</p>
+            <p>ParisStewart1202@gmail.com</p>
+            <a class="black-button" href="mailto:ParisStewart1202@gmail.com">Send With Zelle</a>
+          </article>
+          <article class="contribution-card">
+            <h3>Cash App</h3>
+            <p class="pay-logo cash"><span>$</span> Cash App</p>
+            <p>$TheStewartsHome</p>
+            <a class="black-button" href="https://cash.app/" target="_blank" rel="noreferrer">Send With Cash App</a>
+          </article>
+          <article class="contribution-card">
+            <h3>Venmo</h3>
+            <p class="pay-logo venmo">venmo</p>
+            <p>@TheStewartsHome</p>
+            <a class="black-button" href="https://venmo.com/" target="_blank" rel="noreferrer">Send With Venmo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="thanks" id="thank-you" aria-labelledby="thanks-title">
+        <div class="thanks-image" aria-hidden="true"></div>
+        <div class="thanks-copy">
+          <h2 id="thanks-title">thank you</h2>
+          <div class="divider" aria-hidden="true"><span></span><b>&hearts;</b><span></span></div>
+          <p>
+            Your love and support mean the world to us. Thank you for being
+            part of our journey and helping us build our next chapter.
+          </p>
+          <p class="gold-line">We are so grateful</p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Stewart's Home Registry</p>
-      <a href="#top">Back to top</a>
+      <p>Thank you for helping us build our next chapter. <span>&hearts;</span></p>
     </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>
