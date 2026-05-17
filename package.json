@@ -1,0 +1,8 @@
+{
+  "name": "stewarts-home-registry",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/serve.cjs"
+  }
+}

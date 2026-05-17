@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A home registry for Stewart's next chapter, with room-by-room gifts and simple ways to help."
+    />
+    <title>Stewart's Home Registry</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Stewart's Home Registry home">
+        <span class="brand-mark">S</span>
+        <span>Stewart's Home Registry</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#registry">Registry</a>
+        <a href="#details">Details</a>
+        <a href="#note">Note</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">For the place we are making home</p>
+          <h1 id="hero-title">Stewart's Home Registry</h1>
+          <p class="hero-copy">
+            A simple list of helpful pieces for settling in, hosting well, and
+            making everyday rooms feel ready for real life.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#registry">View registry</a>
+            <a class="button secondary" href="#details">How to help</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="details" aria-labelledby="details-title">
+        <div>
+          <p class="section-kicker">Thank you</p>
+          <h2 id="details-title">Every gift helps turn the house into a home.</h2>
+        </div>
+        <div class="detail-grid">
+          <article>
+            <span class="detail-icon">01</span>
+            <h3>Choose a room</h3>
+            <p>Browse by kitchen, living room, bedroom, outdoor, and practical essentials.</p>
+          </article>
+          <article>
+            <span class="detail-icon">02</span>
+            <h3>Pick what feels right</h3>
+            <p>Each item includes a priority and a suggested amount so there is no guessing.</p>
+          </article>
+          <article>
+            <span class="detail-icon">03</span>
+            <h3>Send a note</h3>
+            <p>A message matters too. The registry keeps room for warmth, not just things.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="registry-section" id="registry" aria-labelledby="registry-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Registry</p>
+            <h2 id="registry-title">Room-by-room wishlist</h2>
+          </div>
+          <label class="search-label">
+            <span>Search registry</span>
+            <input id="searchInput" type="search" placeholder="Search items or rooms" />
+          </label>
+        </div>
+
+        <div class="filters" role="list" aria-label="Registry filters">
+          <button class="filter active" data-filter="All" type="button">All</button>
+          <button class="filter" data-filter="Kitchen" type="button">Kitchen</button>
+          <button class="filter" data-filter="Living" type="button">Living</button>
+          <button class="filter" data-filter="Bedroom" type="button">Bedroom</button>
+          <button class="filter" data-filter="Outdoor" type="button">Outdoor</button>
+          <button class="filter" data-filter="Essentials" type="button">Essentials</button>
+        </div>
+
+        <div class="registry-grid" id="registryGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="note-section" id="note" aria-labelledby="note-title">
+        <div class="note-panel">
+          <p class="section-kicker">A personal note</p>
+          <h2 id="note-title">We are grateful you are part of this chapter.</h2>
+          <p>
+            Whether you choose something practical, something beautiful, or just
+            send encouragement, thank you for helping make this home feel full
+            before the boxes are even unpacked.
+          </p>
+        </div>
+        <div class="contact-panel" aria-label="Registry contact details">
+          <h3>Send gifts or questions</h3>
+          <p>Stewart Home Registry</p>
+          <button id="copyAddress" class="button primary" type="button">
+            Copy mailing address
+          </button>
+          <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Stewart's Home Registry</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
